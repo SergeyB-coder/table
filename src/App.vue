@@ -2,7 +2,8 @@
   <div>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <TableMain/>
+    <!-- <TableMain/> -->
+    <AddUser/>
   </div>
   
 </template>
@@ -10,13 +11,15 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 
-import TableMain from './components/TableMain.vue'
+// import TableMain from './components/TableMain.vue'
+import AddUser from './components/AddUser.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    TableMain
+    // TableMain,
+    AddUser
   }
 }
 </script>
