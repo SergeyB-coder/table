@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <TableMain/> -->
-    <AddUser/>
+    <AddSource/>
   </div>
   
 </template>
@@ -12,14 +12,16 @@
 // import HelloWorld from './components/HelloWorld.vue'
 
 // import TableMain from './components/TableMain.vue'
-import AddUser from './components/AddUser.vue'
+// import AddUser from './components/AddUser.vue'
+import AddSource from './components/AddSource.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     // TableMain,
-    AddUser
+    // AddUser
+    AddSource
   }
 }
 </script>
