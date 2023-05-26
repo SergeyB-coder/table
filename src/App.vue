@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <TableMain/> -->
-    <ListDelivers/>
+    <StopDeliver/>
   </div>
   
 </template>
@@ -15,7 +15,8 @@
 // import AddUser from './components/AddUser.vue'
 // import AddSource from './components/AddSource.vue'
 // import MainPage from './components/main/MainPage.vue'
-import ListDelivers from './components/delivers/ListDelivers.vue'
+// import ListDelivers from './components/delivers/ListDelivers.vue'
+import StopDeliver from './components/StopDeliver.vue'
 
 export default {
   name: 'App',
@@ -24,7 +25,8 @@ export default {
     // TableMain,
     // AddUser
     // AddSource
-    ListDelivers
+    // ListDelivers
+    StopDeliver
   }
 }
 </script>
