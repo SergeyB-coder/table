@@ -134,7 +134,7 @@ export default {
             is_sorted_ctr: true,
             is_sorted_delivers: true,
 
-            show_modal: false
+            show_modal: true
         }
     },
     components: {
