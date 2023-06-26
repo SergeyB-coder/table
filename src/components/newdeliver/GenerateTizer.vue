@@ -1,9 +1,6 @@
 <template>
     <div class="cntr-row">
         <part-left />
-
-
-
         <div class="cntr-bg-2">
 
             <div class="cntr-table">
@@ -19,35 +16,8 @@
 
                 <div style="display: flex; width: 70vw">
                     <div style="width: 50%">
-                        <div style="width: fit-content; margin-top: 15px; height: 17px" class="text-2">
-                            Тексты тизеров или поста
-                        </div>
 
-                        <div class="row_between">
-                            <div style="display: flex">
-                                <div class="selecter_file row_between mt-10 text-3">
-                                    Выберите файл
-                                </div>
-                                <div class="selected_file row_between mt-10 text-2">
-                                    Файл не выбран
-                                </div>
-                            </div>
-
-                            <div class="btn_upload mt-10">
-                                <div class="text-4">Загрузить</div>
-                            </div>
-                        </div>
-
-
-                        <div class="row_between  a-c mt-15">
-                            <div style="width: fit-content" class="text-2">
-                                Заголовок 1
-                            </div>
-                            <div class="text-6">
-                                0/25
-                            </div>
-                        </div>
-                        <textarea class="textarea_tizer mt-10 text-2" rows="4" placeholder="Введите заголовок"></textarea>
+                        
                         <div class="row_between  a-c mt-15">
                             <div style="width: fit-content" class="text-2">
                                 Заголовок 2
@@ -56,7 +26,7 @@
                                 0/25
                             </div>
                         </div>
-                        <textarea class="textarea_tizer mt-10 text-2" rows="4" placeholder="Введите заголовок"></textarea>
+                        <textarea class="textarea_tizer mt-10 text-2" rows="3" placeholder="Введите заголовок"></textarea>
                         <div class="row_between  a-c mt-15">
                             <div style="width: fit-content" class="text-2">
                                 Заголовок 3
@@ -65,29 +35,10 @@
                                 0/25
                             </div>
                         </div>
-                        <textarea class="textarea_tizer mt-10" rows="4" placeholder="Введите заголовок"></textarea>
+                        <textarea class="textarea_tizer mt-10" rows="3" placeholder="Введите заголовок"></textarea>
 
                     </div>
                     <div style="width: 50%; margin-left: 8px">
-                        <div style="height: 17px; margin-top: 15px;">
-
-                        </div>
-                        <div class="row_link_tizer mt-10" :class="{ blue_shadow: focus_input_link }">
-                            <div class="cntr_text_http text-3">
-                                http://
-                            </div>
-                            <input @blur="focus_input_link = false" @focus="focus_input_link = true"
-                                class="link_tizer  text_input innn" placeholder="Ссылка на изображение тизера" />
-                        </div>
-                        <div class="row_between  a-c mt-15">
-                            <div style="width: fit-content" class="text-2">
-                                Текст 1
-                            </div>
-                            <div class="text-6">
-                                0/60
-                            </div>
-                        </div>
-                        <textarea class="textarea_tizer mt-10 text-2" rows="4" placeholder="Введите заголовок"></textarea>
                         <div class="row_between  a-c mt-15">
                             <div style="width: fit-content" class="text-2">
                                 Текст 2
@@ -96,7 +47,7 @@
                                 0/60
                             </div>
                         </div>
-                        <textarea class="textarea_tizer mt-10 text-2" rows="4" placeholder="Введите заголовок"></textarea>
+                        <textarea class="textarea_tizer mt-10 text-2" rows="3" placeholder="Введите заголовок"></textarea>
                         <div class="row_between  a-c mt-15">
                             <div style="width: fit-content" class="text-2">
                                 Текст 3
@@ -105,7 +56,7 @@
                                 0/60
                             </div>
                         </div>
-                        <textarea class="textarea_tizer mt-10" rows="4" placeholder="Введите заголовок"></textarea>
+                        <textarea class="textarea_tizer mt-10" rows="3" placeholder="Введите заголовок"></textarea>
 
                     </div>
                 </div>
@@ -123,17 +74,28 @@
                     Ссылка
                 </div>
                 <div class="row_between a-c mt-10">
-                    <input class="input_link_futter" placeholder="Ввод" />
-                    <div @click="is_check = !is_check" :class="{check_futter: !is_check, is_check_futter: is_check}">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.144 3.47369C11.2038 3.41276 11.275 3.36436 11.3537 3.33131C11.4323 3.29827 11.5168 3.28125 11.6021 3.28125C11.6874 3.28125 11.7719 3.29827 11.8505 3.33131C11.9292 3.36436 12.0005 3.41276 12.0602 3.47369C12.3104 3.72657 12.3139 4.13519 12.0689 4.39244L6.89504 10.5087C6.8363 10.5732 6.76502 10.625 6.68555 10.661C6.60608 10.6971 6.5201 10.7165 6.43287 10.7181C6.34565 10.7198 6.259 10.7036 6.17824 10.6706C6.09747 10.6376 6.02429 10.5884 5.96317 10.5262L2.81492 7.33594C2.6935 7.21212 2.62549 7.04561 2.62549 6.87219C2.62549 6.69877 2.6935 6.53227 2.81492 6.40844C2.87463 6.34751 2.9459 6.29911 3.02456 6.26606C3.10321 6.23302 3.18767 6.216 3.27298 6.216C3.35829 6.216 3.44275 6.23302 3.5214 6.26606C3.60006 6.29911 3.67133 6.34751 3.73104 6.40844L6.40154 9.11482L11.1265 3.49294C11.132 3.48618 11.1378 3.47975 11.144 3.47369Z" fill="white"/>
-</svg>
+                    <input :class="{input_link_futter: show_link_warning, textarea_tizer: !show_link_warning}" placeholder="Ввод" />
+                    <div class="check_futter">
 
                     </div>
                     <div class="check_futter_text">Важная</div>
                 </div>
 
-                <div class="input_link_futter_warning">Пожалуйста, заполните поле «ссылка»</div>
+                <div style="width: fit-content" class="text-2 mt-10">
+                    Примечание
+                </div>
+                <div class="row_between a-c mt-10">
+                    <input :class="{input_link_futter: show_link_warning, textarea_tizer: !show_link_warning}" placeholder="Ввод" />
+                </div>
+
+                <div class="cntr-row mt-15">
+                    <div class="btn_save_to text-4">Сохранить и перейти в список доставок</div>
+                    <div class="btn_grey text-5">Перейти в созданный список доставок</div>
+                </div>
+                
+                <div class="btn_save_create text-4 mt-15">
+                    Сохранить и создать следующую доставку
+                </div>
             </div>
         </div>
     </div>
@@ -154,13 +116,15 @@ export default {
     name: 'TizersDeliver',
     data() {
         return {
-            is_check: true,
             show_rules_tizer_create: true,
             selecter_project_focus: false,
             selecter_line_focus: false,
             selecter_target_focus: false,
             selecter_geos_focus: false,
             focus_input_link: false,
+
+            show_link_warning: false,
+
             selected_projects: [],
             selected_lines: [],
             selected_targets: [],
@@ -207,18 +171,7 @@ export default {
     margin-left: 17px;
     border-radius: 4px;
     border: 1px solid var(--unnamed, #E5E7EB);
-    width: 17px;
-    height: 14px;
-    cursor: pointer;
-}
-
-.is_check_futter {
-    cursor: pointer;
-    margin-left: 17px;
-    border-radius: 4px;
-border: 1px solid var(--blue-500, #3B82F6);
-background: var(--blue-500, #3B82F6);
-    width: 17px;
+    width: 14px;
     height: 14px;
 }
 
@@ -283,6 +236,36 @@ background: var(--blue-500, #3B82F6);
     align-items: center
 }
 
+.btn_grey {
+    border-radius: 6px;
+    padding: 14px 16px 14px 16px;
+
+    margin-left: 8px;
+
+    cursor: pointer;
+    border: 1px solid var(--gray-200, #E5E7EB);
+    background: var(--gray-50, #F9FAFB);
+
+    /* Drop Shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn_save_to {
+    border-radius: 6px;
+    background: var(--blue-500, #3B82F6);
+    padding: 14px 16px 14px 16px;
+
+    /* margin-left: 8px; */
+
+    cursor: pointer;
+}
+
+.btn_save_create {
+    border-radius: 6px;
+    background: var(--gray-600, #4B5563);
+    padding: 14px 16px 14px 16px;
+}
+
 .btn_generate_tizer {
     border-radius: 6px;
     background: var(--blue-500, #3B82F6);
@@ -323,15 +306,14 @@ background: var(--blue-500, #3B82F6);
 }
 
 .text-5 {
-    color: var(--gray-800, #1F2937);
+    color: var(--gray-500, #6B7280);
+    text-align: center;
 
-    /* LG/Bold */
-    font-size: 18px;
+    /* Input/Medium Semi Bold */
+    font-size: 15px;
     font-family: Inter;
-    font-weight: 700;
-    letter-spacing: 0.09px;
-
-    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.075px;
 }
 
 .rules_text {
