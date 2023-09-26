@@ -446,9 +446,9 @@ export default {
     margin-left: 18px;
 }
 
-.mr-16 {
-    margin-right: 16px;
-}
+    .mr-16 {
+        margin-right: 16px;
+    }
 
 .a-c {
     align-items: center;

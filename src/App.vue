@@ -5,8 +5,9 @@
     <!-- <TableMain/> -->
     <!-- <ListReadyDelivers/> -->
     <!-- <GenerateTizer/> -->
-    <TizersDeliver/>
-    <NewDeliver/>
+    <!-- <TizersDeliver/>
+    <NewDeliver/> -->
+    <SettingsFids/>
   </div>
   
 </template>
@@ -22,9 +23,11 @@
 // import StopDeliver from './components/StopDeliver.vue'
 // import ImportDelivers from './components/delivers/ImportDelivers.vue'
 // import NewDeliver from './components/newdeliver/NewDeliver.vue'
-import TizersDeliver from './components/newdeliver/TizersDeliver.vue'
+// import TizersDeliver from './components/newdeliver/TizersDeliver.vue'
 // import GenerateTizer from './components/newdeliver/GenerateTizer.vue'
 // import ListReadyDelivers from './components/newdeliver/ListReadyDelivers.vue';
+
+import SettingsFids from './components/settings/SettingsFids'
 
 export default {
   name: 'App',
@@ -37,9 +40,10 @@ export default {
     // StopDeliver
     // MainPage
     // NewDeliver
-    TizersDeliver
+    // TizersDeliver
     // GenerateTizer
     // ListReadyDelivers
+    SettingsFids
   }
 }
 </script>
