@@ -33,7 +33,8 @@
         </div>
         <!-- </div> -->
 
-        <div class="main__modal_futter">
+        
+        <div class="main__modal_futter" @click="$show_modal_is_save = false">
             <div class="main__modal_btn_cancel">Назад</div>
         </div>
     </div>
@@ -42,6 +43,7 @@
 <script>
 
 export default {
+    props: ['show_modal_is_save'],
     data() {
         return {
 

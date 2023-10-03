@@ -7,7 +7,8 @@
     <!-- <GenerateTizer/> -->
     <!-- <TizersDeliver/>
     <NewDeliver/> -->
-    <SettingsFids/>
+    <!-- <SettingsFids/> -->
+    <SettingsLimits/>
   </div>
   
 </template>
@@ -27,7 +28,8 @@
 // import GenerateTizer from './components/newdeliver/GenerateTizer.vue'
 // import ListReadyDelivers from './components/newdeliver/ListReadyDelivers.vue';
 
-import SettingsFids from './components/settings/SettingsFids'
+// import SettingsFids from './components/settings/SettingsFids'
+import SettingsLimits from './components/settings/SettingsLimits'
 
 export default {
   name: 'App',
@@ -43,7 +45,8 @@ export default {
     // TizersDeliver
     // GenerateTizer
     // ListReadyDelivers
-    SettingsFids
+    // SettingsFids
+    SettingsLimits
   }
 }
 </script>
