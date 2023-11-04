@@ -9,7 +9,8 @@
     <NewDeliver/> -->
     <!-- <SettingsFids/> -->
     <!-- <SettingsLimits/> -->
-    <SettingsSegments/>
+    <!-- <SettingsSegments/> -->
+    <SettingsSegmentsDeliver/>
   </div>
   
 </template>
@@ -31,7 +32,8 @@
 
 // import SettingsFids from './components/settings/SettingsFids'
 // import SettingsLimits from './components/settings/SettingsLimits'
-import SettingsSegments from './components/settings/SettingsSegments'
+import SettingsSegmentsDeliver from './components/settings/SettingsSegmentsDeliver.vue';
+// import SettingsSegments from './components/settings/SettingsSegments'
 
 export default {
   name: 'App',
@@ -49,7 +51,8 @@ export default {
     // ListReadyDelivers
     // SettingsFids
     // SettingsLimits
-    SettingsSegments
+    // SettingsSegments
+    SettingsSegmentsDeliver
   }
 }
 </script>

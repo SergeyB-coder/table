@@ -1,24 +1,28 @@
 <template>
-    <div class="cntr-selecter">
+    <div class="wrap__cntr-selecter">
+        <div class="cntr-selecter">
+            <div class="cntr-selecter-item box-select">
+                <div class="text-2 color-1 ml-8">Сочи</div>
+            </div>
 
-        <div v-for="index in [5, 10, 30, 50, 100]" v-bind:key="index" class="cntr-selecter-item">
-            <div class=" text-2 color-1 ml-8" :class="{color2 :index==10}">{{ index }}</div>
+            <div class="cntr-selecter-item">
+                <div class="text-2 color-1 ml-8">Краснодар</div>
+            </div>
+
+            <div class="cntr-selecter-item">
+                <div class="text-2 color-1 ml-8">Туапсе</div>
+            </div>
         </div>
-
     </div>
 </template>
 
 <script>
-// import SvgAccept from './svg/SvgAccept.vue'
-// import SvgCancel from './svg/SvgCancel.vue'
-// import SvgStop from './svg/SvgStop.vue'
-// import SvgAttention from './svg/SvgAttention.vue'
 
 export default {
-    name: 'SelecterPage',
+    name: 'SelecterGeo',
     data() {
         return {
-            is_selected_page: true
+
         }
     },
     components: {
@@ -28,7 +32,6 @@ export default {
 </script>
 
 <style scoped>
-
 .text-2 {
     font-family: 'Inter';
     font-style: normal;
@@ -46,9 +49,27 @@ export default {
     color: #6B7280;
 }
 
-.color2 {
+.color-2 {
     color: #3B82F6;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    margin-right: 5px;
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* border-radius: 999px; */
+    border-radius: 10px;
+    background: #E5E7EB;
+}
+
+
+
+
 
 .cntr-selecter {
     box-sizing: border-box;
@@ -59,11 +80,28 @@ export default {
     align-items: flex-start;
     padding: 0px 0px 8px;
 
-    position: absolute;
-    width: 64px;
+    /* position: absolute; */
+    width: 188px;
     height: 162px;
-    right:0px;
-    top: 45px;
+    
+
+    z-index: 14;
+}
+
+.wrap__cntr-selecter {
+    box-sizing: border-box;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 0px 0px 8px; */
+
+    position: absolute;
+    width: 192px;
+    height: 162px;
+    left: 0px;
+    top: 50px;
 
     /* White/White */
 
@@ -85,14 +123,15 @@ export default {
     margin-left: 8px;
     margin-top: 8px;
     display: flex;
-    justify-content:left;
+    justify-content: left;
     align-items: center;
-    width: 100px;
+    width: 80%;
     height: 32px;
+    cursor: pointer;
 }
 
 .cntr-selecter-item:hover {
-    background: var(--d-9-d-9-d-9, #F3F4F6);
+    background: #F3F4F6;
     border-radius: 6px;
 }
 
