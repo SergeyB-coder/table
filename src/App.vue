@@ -10,7 +10,8 @@
     <!-- <SettingsFids/> -->
     <!-- <SettingsLimits/> -->
     <!-- <SettingsSegments/> -->
-    <SettingsSegmentsDeliver/>
+    <!-- <SettingsSegmentsDeliver/> -->
+    <SegmentsDeliver/>
   </div>
   
 </template>
@@ -32,8 +33,9 @@
 
 // import SettingsFids from './components/settings/SettingsFids'
 // import SettingsLimits from './components/settings/SettingsLimits'
-import SettingsSegmentsDeliver from './components/settings/SettingsSegmentsDeliver.vue';
+// import SettingsSegmentsDeliver from './components/settings/SettingsSegmentsDeliver.vue';
 // import SettingsSegments from './components/settings/SettingsSegments'
+import SegmentsDeliver from './components/settings/SegmentsDeliver.vue'
 
 export default {
   name: 'App',
@@ -52,7 +54,8 @@ export default {
     // SettingsFids
     // SettingsLimits
     // SettingsSegments
-    SettingsSegmentsDeliver
+    // SettingsSegmentsDeliver
+    SegmentsDeliver
   }
 }
 </script>

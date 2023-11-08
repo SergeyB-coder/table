@@ -29,9 +29,9 @@
 
         <div class="modal_fltr_cntr_body">
 
-            <!-- DELIVER -->
+            <!-- SEGMENT -->
             <div @click="show_find_deliver = !show_find_deliver" class="modal_fltr_cntr_selecter">
-                <div>Доставка</div>
+                <div>Сегмент</div>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"
                     :class="{ rotate_180: show_find_deliver }">
                     <mask id="path-1-inside-1_634_29885" fill="white">
@@ -61,12 +61,12 @@
                     <input class="input_find_deliver" placeholder="Поиск" @focus="show_selecter_deliver = true"
                         @focusout="show_selecter_deliver = false" 
                     />
-                    <selecter-deliver v-show="show_selecter_deliver" />
+                    <selecter-segment v-show="show_selecter_deliver" />
                 </div>
                 
                 <div v-show="!is_all_selected">
-                    <div v-for="deliver in ['Доставка 185', 'Доставка 2']" v-bind:key="deliver" class="selected_deliver">
-                        <div class="text__settings_deliver_sm">{{ deliver }}</div>
+                    <div v-for="segment in ['Сегмент 185', 'Сегмент 2']" v-bind:key="segment" class="selected_deliver">
+                        <div class="text__settings_deliver_sm">{{ segment }}</div>
                         <svg class="ml-10" width="10" height="10" viewBox="0 0 10 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -259,12 +259,11 @@
 <script>
 
 
-import SelecterDeliver from '../SelecterDeliver.vue'
+import SelecterSegment from '../SelecterSegment.vue'
 import SelecterGeo from '../SelecterGeo.vue'
 import SelecterInterest from '../SelecterInterest.vue'
 
 export default {
-    props: ['show_modal_is_save'],
     data() {
         return {
             show_find_deliver: false,
@@ -281,7 +280,7 @@ export default {
         }
     },
     components: {
-        'selecter-deliver': SelecterDeliver,
+        'selecter-segment': SelecterSegment,
         'selecter-geo': SelecterGeo,
         'selecter-interest': SelecterInterest
     }
