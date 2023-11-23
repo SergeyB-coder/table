@@ -18,7 +18,8 @@
                     
                 </div>
                 <div class="cntr-part-left-2">
-                    <div class="box-item box-select text-2 box-padding">Настройка сегментов доставок</div>
+                    <div class="box-item text-2 box-padding">Настройка сегментов доставок</div>
+                    <div class="box-item box-select text-2 box-padding">Аудитории</div>
                     <!-- <div class="box-item text-2 box-padding">Настройка лимитов, ставок, закупки</div>
                     <div class="box-item text-2 box-padding">Настройка сегментов</div> -->
                 </div>
