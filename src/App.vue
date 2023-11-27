@@ -13,7 +13,8 @@
     <!-- <SettingsSegmentsDeliver/> -->
     <!-- <SegmentsDeliver/> -->
     <!-- <SettingsInterest/> -->
-    <AudienceManagment/>
+    <!-- <AudienceManagment/> -->
+    <ListExports/>
   </div>
   
 </template>
@@ -39,7 +40,8 @@
 // import SettingsSegments from './components/settings/SettingsSegments'
 // import SegmentsDeliver from './components/settings/SegmentsDeliver.vue'
 // import SettingsInterest from './components/settings/SettingsInterest.vue'
-import AudienceManagment from './components/audience/AudienceManagment.vue'
+// import AudienceManagment from './components/audience/AudienceManagment.vue'
+import ListExports from './components/audience/ListExports.vue'
 
 export default {
   name: 'App',
@@ -61,7 +63,8 @@ export default {
     // SettingsSegmentsDeliver
     // SegmentsDeliver
     // SettingsInterest
-    AudienceManagment
+    // AudienceManagment
+    ListExports
   }
 }
 </script>

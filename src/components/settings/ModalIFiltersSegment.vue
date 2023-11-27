@@ -539,6 +539,7 @@ input[type="range"]::-ms-track {
     line-height: 11px;
     /* 110% */
     letter-spacing: 0.05px;
+    white-space: nowrap;
 }
 
 .cur_p {
