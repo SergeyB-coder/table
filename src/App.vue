@@ -15,7 +15,8 @@
     <!-- <SettingsInterest/> -->
     <!-- <AudienceManagment/> -->
     <!-- <ListExports/> -->
-    <SettingsAccounts/>
+    <!-- <SettingsAccounts/> -->
+    <SettingsTgChats/>
   </div>
   
 </template>
@@ -43,7 +44,8 @@
 // import SettingsInterest from './components/settings/SettingsInterest.vue'
 // import AudienceManagment from './components/audience/AudienceManagment.vue'
 // import ListExports from './components/audience/ListExports.vue'
-import SettingsAccounts from './components/settings_accounts/SettingsAccounts.vue'
+// import SettingsAccounts from './components/settings_accounts/SettingsAccounts.vue'
+import SettingsTgChats from './components/settings/SettingsTgChats.vue'
 
 export default {
   name: 'App',
@@ -67,7 +69,8 @@ export default {
     // SettingsInterest
     // AudienceManagment
     // ListExports
-    SettingsAccounts
+    // SettingsAccounts
+    SettingsTgChats
   }
 }
 </script>
