@@ -138,7 +138,7 @@ export default {
     box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.04), 0px 4px 3px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 
-    z-index: 14;
+    z-index: 20;
 }
 
 .cntr-selecter_net-item {

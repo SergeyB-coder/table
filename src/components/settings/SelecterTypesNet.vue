@@ -1,7 +1,8 @@
 <template>
     <div class="wrap__cntr-selecter">
         <div class="cntr-selecter">
-            <div v-for="interest in interests" v-bind:key="interest" class="cntr-selecter-item box-select">
+            <div v-for="interest in interests" v-bind:key="interest" class="cntr-selecter-item box-select"
+                @click="handleSelection(interest)">
                 <div class="text-2 color-1 ml-8">{{ interest }}</div>
             </div>
         </div>
@@ -11,9 +12,10 @@
 <script>
 
 export default {
-    name: 'SelecterInterests',
+    name: 'SelecterTypeNet',
     props: {
-        interests: Array
+        interests: Array,
+        updateVariable: Function
     },
     data() {
         return {
@@ -21,6 +23,12 @@ export default {
         }
     },
     components: {
+    },
+    methods: {
+        handleSelection(selectedInterest) {
+            // Вызываем функцию обновления переменной в родительском компоненте
+            this.updateVariable(selectedInterest);
+        }
     }
 }
 
@@ -76,9 +84,9 @@ export default {
     padding: 0px 0px 8px;
 
     /* position: absolute; */
-    width: 210px;
+    width: 99%;
     height: 162px;
-    
+
 
     z-index: 14;
 }
@@ -93,7 +101,7 @@ export default {
     /* padding: 0px 0px 8px; */
 
     position: absolute;
-    width: 210px;
+    width: 100%;
     height: 162px;
     left: 0px;
     top: 50px;
@@ -120,7 +128,7 @@ export default {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 80%;
+    width: 91%;
     height: 32px;
     cursor: pointer;
 }

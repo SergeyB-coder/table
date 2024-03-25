@@ -16,7 +16,8 @@
     <!-- <AudienceManagment/> -->
     <!-- <ListExports/> -->
     <!-- <SettingsAccounts/> -->
-    <SettingsTgChats/>
+    <!-- <SettingsTgChats/> -->
+    <SettingsTypeNet/>
   </div>
   
 </template>
@@ -45,7 +46,8 @@
 // import AudienceManagment from './components/audience/AudienceManagment.vue'
 // import ListExports from './components/audience/ListExports.vue'
 // import SettingsAccounts from './components/settings_accounts/SettingsAccounts.vue'
-import SettingsTgChats from './components/settings/SettingsTgChats.vue'
+// import SettingsTgChats from './components/settings/SettingsTgChats.vue'
+import SettingsTypeNet from './components/settings/SettingsTypeNet.vue'
 
 export default {
   name: 'App',
@@ -70,7 +72,8 @@ export default {
     // AudienceManagment
     // ListExports
     // SettingsAccounts
-    SettingsTgChats
+    // SettingsTgChats
+    SettingsTypeNet
   }
 }
 </script>
