@@ -17,7 +17,8 @@
     <!-- <ListExports/> -->
     <!-- <SettingsAccounts/> -->
     <!-- <SettingsTgChats/> -->
-    <SettingsTypeNet/>
+    <!-- <SettingsTypeNet/> -->
+    <SettingsUsers/>
   </div>
   
 </template>
@@ -47,7 +48,8 @@
 // import ListExports from './components/audience/ListExports.vue'
 // import SettingsAccounts from './components/settings_accounts/SettingsAccounts.vue'
 // import SettingsTgChats from './components/settings/SettingsTgChats.vue'
-import SettingsTypeNet from './components/settings/SettingsTypeNet.vue'
+// import SettingsTypeNet from './components/settings/SettingsTypeNet.vue'
+import SettingsUsers from './components/settings/SettingsUsers.vue';
 
 export default {
   name: 'App',
@@ -73,7 +75,8 @@ export default {
     // ListExports
     // SettingsAccounts
     // SettingsTgChats
-    SettingsTypeNet
+    // SettingsTypeNet
+    SettingsUsers
   }
 }
 </script>

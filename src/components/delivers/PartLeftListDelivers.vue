@@ -39,6 +39,7 @@
                 <div class="cntr-part-left-2">
                     <div class="box-item text-2 box-padding">Настройка ТГ-чатов</div>
                     <div class="box-item box-select text-2 box-padding">Тип сети</div>
+                    <div class="box-item box-select text-2 box-padding">Пользователи</div>
                     <!-- <div class="box-item text-2 box-padding">Настройка лимитов, ставок, закупки</div>
                     <div class="box-item text-2 box-padding">Настройка сегментов</div> -->
                 </div>
