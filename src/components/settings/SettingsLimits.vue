@@ -278,7 +278,7 @@
 import PartLeftListDelivers from '../delivers/PartLeftListDelivers.vue'
 import ModalIssave from './ModalIsSave.vue'
 import SelecterIndex from '../SelecterIndex.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 import SelecterCPC from '../SelecterCPC.vue'
 
 export default {

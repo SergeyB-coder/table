@@ -356,7 +356,7 @@
 <script>
 
 import PartLeftListDelivers from '../delivers/PartLeftListDelivers.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 // import SelecterCPC from '../SelecterCPC.vue'
 // import ModalFiltersSegment from './ModalIFiltersSegment.vue'
 import ModalIFiltersInterest from './ModalIFiltersInterest.vue'

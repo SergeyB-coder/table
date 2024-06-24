@@ -22,11 +22,24 @@
                     <div class="box-item box-select text-2 box-padding">Аудитории</div>
                 </div> -->
                 <part-left-item textItem="Управление рекламой" />
-                <part-left-item textItem="Мониторинг рекламных компаний" />
+                <!-- <part-left-item textItem="Мониторинг рекламных компаний" /> -->
+                <div class="cntr center box-size box-padding mt-36">
+                    <div class="text-3">Мониторинг рекламных компаний</div>
+                    <svg class="mr-14" width="12" height="8" viewBox="0 0 12 8" fill="" stroke="#3B82F6"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.30969 6.93476C6.26905 6.9755 6.22077 7.00783 6.16762 7.02988C6.11446 7.05194 6.05748 7.06329 5.99994 7.06329C5.94239 7.06329 5.88541 7.05194 5.83226 7.02988C5.77911 7.00783 5.73083 6.9755 5.69019 6.93476L0.440187 1.68476C0.358037 1.60261 0.311884 1.49119 0.311884 1.37501C0.311884 1.25883 0.358037 1.14741 0.440187 1.06526C0.522337 0.98311 0.633758 0.936958 0.749938 0.936958C0.866116 0.936958 0.977537 0.98311 1.05969 1.06526L5.99994 6.00639L10.9402 1.06526C11.0223 0.983111 11.1338 0.936959 11.2499 0.936959C11.3661 0.936959 11.4775 0.983111 11.5597 1.06526C11.6418 1.14741 11.688 1.25883 11.688 1.37501C11.688 1.49119 11.6418 1.60261 11.5597 1.68476L6.30969 6.93476Z"
+                            fill="#374151" />
+                    </svg>
+                    
+                </div>
+                <div class="cntr-part-left-2">
+                    <div class="box-item text-2 box-padding">Мониторинг траффика доставок</div>
+                </div>
                 <part-left-item textItem="Оптимизация доставок" />
                 <part-left-item textItem="Статистика" />
-                <!-- <part-left-item textItem="Настройки" /> -->
-                <div class="cntr center box-size box-padding mt-36">
+                <part-left-item textItem="Настройки" />
+                <!-- <div class="cntr center box-size box-padding mt-36">
                     <div class="text-3">Настройки</div>
                     <svg class="mr-14" width="12" height="8" viewBox="0 0 12 8" fill="" stroke="#3B82F6"
                         xmlns="http://www.w3.org/2000/svg">
@@ -40,9 +53,7 @@
                     <div class="box-item text-2 box-padding">Настройка ТГ-чатов</div>
                     <div class="box-item box-select text-2 box-padding">Тип сети</div>
                     <div class="box-item box-select text-2 box-padding">Пользователи</div>
-                    <!-- <div class="box-item text-2 box-padding">Настройка лимитов, ставок, закупки</div>
-                    <div class="box-item text-2 box-padding">Настройка сегментов</div> -->
-                </div>
+                </div> -->
             </div>
 
 

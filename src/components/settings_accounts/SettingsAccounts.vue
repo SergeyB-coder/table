@@ -515,7 +515,7 @@
 <script>
 
 import PartLeftSettingsAccounts from '../settings_accounts/PartLeftListSettingsAccounts.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 import SelecterIndex from './SelecterIndex.vue'
 import SelecterAccount from './SelecterAccount'
 import SelecterLine from './SelecterLine'

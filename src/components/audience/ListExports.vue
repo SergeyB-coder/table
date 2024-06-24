@@ -669,7 +669,7 @@
 <script>
 
 import PartLeftListDelivers from '../delivers/PartLeftListDelivers.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 import SelecterAudience from './SelecterAudience.vue'
 // import SelecterCPC from '../SelecterCPC.vue'
 // import ModalFiltersSegment from './ModalIFiltersSegment.vue'

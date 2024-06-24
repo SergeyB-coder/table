@@ -205,7 +205,7 @@
 import PartLeftListDelivers from '../delivers/PartLeftListDelivers.vue'
 import ModalIssave from './ModalIsSave.vue'
 import SelecterSegments from '../SelecterSegments.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 import SvgFidcheck from '../svg/SvgFidcheck'
 
 export default {

@@ -5,3 +5,4 @@
         <path d="M8 11.3333H8.0075" stroke="#EB5757" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </template>
+

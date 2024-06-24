@@ -250,7 +250,7 @@
 <script>
 
 import PartLeftListDelivers from '../delivers/PartLeftListDelivers.vue'
-import SelecterPage from '../SelecterPage.vue'
+import SelecterPage from '../elements/SelecterPage.vue'
 import ModalIFiltersNet from './ModalIFiltersNet.vue'
 import ModalIssave from './ModalIsSave.vue'
 import ModalNewInterest from './ModalNewInterest.vue'
