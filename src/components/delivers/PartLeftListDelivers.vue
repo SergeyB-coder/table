@@ -35,6 +35,7 @@
                 </div>
                 <div class="cntr-part-left-2">
                     <div class="box-item text-2 box-padding">Мониторинг траффика доставок</div>
+                    <div class="box-item text-2 box-padding box-select">Мониторинг сегментов</div>
                 </div>
                 <part-left-item textItem="Оптимизация доставок" />
                 <part-left-item textItem="Статистика" />

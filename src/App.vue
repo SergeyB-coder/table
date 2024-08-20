@@ -19,7 +19,8 @@
     <!-- <SettingsTgChats/> -->
     <!-- <SettingsTypeNet/> -->
     <!-- <SettingsUsers/> -->
-     <MonitoringTraffic/>
+     <!-- <MonitoringTraffic/> -->
+      <MonitoringSegments/>
   </div>
   
 </template>
@@ -51,7 +52,8 @@
 // import SettingsTgChats from './components/settings/SettingsTgChats.vue'
 // import SettingsTypeNet from './components/settings/SettingsTypeNet.vue'
 // import SettingsUsers from './components/settings/SettingsUsers.vue';
-import MonitoringTraffic from './components/delivers/MonitoringTraffic.vue';
+// import MonitoringTraffic from './components/delivers/MonitoringTraffic.vue';
+import MonitoringSegments from './components/delivers/MonitoringSegments.vue';
 
 export default {
   name: 'App',
@@ -79,7 +81,8 @@ export default {
     // SettingsTgChats
     // SettingsTypeNet
     // SettingsUsers
-    MonitoringTraffic
+    // MonitoringTraffic
+    MonitoringSegments
   }
 }
 </script>

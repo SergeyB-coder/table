@@ -34,13 +34,22 @@
                             fill="#1F2937" mask="url(#path-1-inside-1_634_29885)" />
                     </svg>
 
-                    <selecter-interests v-show="show_selecter_deliver"
+                    <selecter-status v-show="show_selecter_deliver"
                         :interests="['Социальная сеть', 'Тизерная сеть', 'Банерная сеть', 'Нет']" />
                 </div>
             </div>
 
             <div v-show="!is_all_selected">
                 <div v-for="id in ['Иконка']" v-bind:key="id" class="selected_deliver">
+                    <svg style="margin-right: 8px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.38021 12.1136C7.26688 12.1136 7.16021 12.0936 7.04688 12.0536C6.68021 11.9136 6.44021 11.5736 6.44021 11.1802V8.98024H5.78688C5.41355 8.98024 5.08688 8.76691 4.93355 8.43357C4.78021 8.09357 4.84021 7.71357 5.08688 7.43357L7.92688 4.20691C8.18688 3.91357 8.58688 3.81357 8.95355 3.95357C9.32021 4.09357 9.56021 4.43357 9.56021 4.82691V7.02691H10.2202C10.5935 7.02691 10.9202 7.24024 11.0735 7.57357C11.2269 7.91357 11.1669 8.29357 10.9202 8.57357L8.08021 11.8002C7.89355 12.0002 7.64021 12.1136 7.38021 12.1136ZM5.93355 7.98024H6.94021C7.21355 7.98024 7.44021 8.20691 7.44021 8.48024V11.0002L10.0669 8.02024H9.06021C8.78688 8.02024 8.56021 7.79357 8.56021 7.52024V5.00024L5.93355 7.98024Z"
+                            fill="#27AE60" />
+                        <path
+                            d="M7.98014 15.1668C4.03348 15.1668 0.813477 11.9535 0.813477 8.00016C0.813477 4.04683 4.03348 0.833496 7.98014 0.833496C11.9268 0.833496 15.1468 4.04683 15.1468 8.00016C15.1468 11.9535 11.9335 15.1668 7.98014 15.1668ZM7.98014 1.8335C4.58014 1.8335 1.81348 4.60016 1.81348 8.00016C1.81348 11.4002 4.58014 14.1668 7.98014 14.1668C11.3801 14.1668 14.1468 11.4002 14.1468 8.00016C14.1468 4.60016 11.3801 1.8335 7.98014 1.8335Z"
+                            fill="#27AE60" />
+                    </svg>
+
                     <div class="text__settings_deliver_sm">{{ id }}</div>
                     <svg class="ml-10" width="10" height="10" viewBox="0 0 10 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +74,8 @@
             <div>
                 <div class="cntr_input_filter_monitoring">
 
-                    <div class="input_date_start date_start" style="text-align: left; padding-left: 16px; height: auto !important;">
+                    <div class="input_date_start date_start"
+                        style="text-align: left; padding-left: 16px; height: auto !important;">
                         12.01.2024
                     </div>
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +122,8 @@
             <div>
                 <div class="cntr_input_filter_monitoring">
 
-                    <div class="input_date_start" style="text-align: left; padding-left: 16px; height: auto !important;">
+                    <div class="input_date_start"
+                        style="text-align: left; padding-left: 16px; height: auto !important;">
                         -
                     </div>
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -177,8 +188,9 @@
 
 
 
-import SelecterInterests from './SelecterInterests.vue'
+// import SelecterInterests from './SelecterInterests.vue'
 // import SelecterInterest from '../SelecterInterest.vue'
+import SelecterStatus from './SelecterStatus.vue';
 
 export default {
     data() {
@@ -210,7 +222,7 @@ export default {
         }
     },
     components: {
-        'selecter-interests': SelecterInterests,
+        'selecter-status': SelecterStatus,
         // 'selecter-interest': SelecterInterest
     }
 }
@@ -277,6 +289,7 @@ export default {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     width: fit-content;
     cursor: pointer;
+    align-items: center;
 }
 
 .selected_deliver:hover {
@@ -327,7 +340,6 @@ input::placeholder {
     letter-spacing: 0.005em;
     text-align: left;
     color: #6B7280
-    
 }
 
 .cntr_input_range_label {
