@@ -20,7 +20,8 @@
     <!-- <SettingsTypeNet/> -->
     <!-- <SettingsUsers/> -->
      <!-- <MonitoringTraffic/> -->
-      <MonitoringSegments/>
+      <!-- <MonitoringSegments/> -->
+       <MediaPlaning/>
   </div>
   
 </template>
@@ -53,7 +54,8 @@
 // import SettingsTypeNet from './components/settings/SettingsTypeNet.vue'
 // import SettingsUsers from './components/settings/SettingsUsers.vue';
 // import MonitoringTraffic from './components/delivers/MonitoringTraffic.vue';
-import MonitoringSegments from './components/delivers/MonitoringSegments.vue';
+// import MonitoringSegments from './components/delivers/MonitoringSegments.vue';
+import MediaPlaning from './components/delivers/MediaPlaning.vue';
 
 export default {
   name: 'App',
@@ -82,7 +84,8 @@ export default {
     // SettingsTypeNet
     // SettingsUsers
     // MonitoringTraffic
-    MonitoringSegments
+    // MonitoringSegments
+    MediaPlaning
   }
 }
 </script>
